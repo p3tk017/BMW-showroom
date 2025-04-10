@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.home-container {
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url('https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2025/wallpaper/m-wallpaper/m4---cs-/bmw_m_wallpaper_m4_cs_front_side_desktop.jpg.asset.1736439781003.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #e0e0e0;
+}
+
+.models-section {
+  padding: 4rem 2rem;
+  background-color: #111;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.model-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #222;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 100%; 
+  transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+  transform: scale(1.05);
+}
+
+.model-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.model-info {
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  flex-grow: 0;
+}
+
+.cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: black;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
